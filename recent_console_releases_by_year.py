@@ -33,4 +33,7 @@ df[df['Platform'].isin(consoles)] \
   .plot(kind='bar', stacked=True)
 
 # Show the graph
-plt.show()
+#plt.show()
+
+# Save the graph as an image
+plt.savefig('images/recent_console_releases_by_year.png')
