@@ -39,3 +39,4 @@ ax1.pie(g_count.values(), explode=(0.4, 0.3, 0.2, 0, 0, 0, 0, 0, 0, 0, 0), label
 ax1.axis('equal')
 
 plt.show()
+plt.savefig('images/xbox_genre_percentages.png')
