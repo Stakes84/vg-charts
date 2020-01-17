@@ -29,7 +29,7 @@ def make_autopct(values):
     return my_autopct
 
 
-# Plotting the chart... For more info on number values replace autopct with make_autopct(g_count.values())
+# Plotting the chart... For more exact values set autopct = make_autopct(g_count.values())
 #   or else use '%1.1f%%'
 fig1, ax1 = plt.subplots()
 plt.suptitle("Xbox One's percentage of titles in each Genre")
