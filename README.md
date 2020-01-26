@@ -6,7 +6,7 @@ This program is for manipulating video game stats
 
 
 ## Pie Chart of Percentage of each Genre for Xbox One Games
-<a href='./xbox_genre_percentages.py'>![](./images/xbox_genre_percentages.png)</a>
+<a href='./xbox_genre_percentages.py'>![](./images/xbox_genre_percentages_fixed.png)</a>
 > vg-chart-generator --filtercol Platform --filterval XOne --groupby Genre --chart --outfile xbox_genre_percentages_fixed.png
 
 ## Pie Chart of Percentage of Square Enix Games by Platform
