@@ -1,3 +1,12 @@
+# Command Line Video Game Chart Generator
+
+## How to install
+1) Build the distribution:
+$ python setup.py sdist
+
+2) Pip install from generated package:
+pip install dist/vg_chart_generator-1.0.0.tar.gz
+
 -- Example Usage --
 $ vg-chart-generator --help
 usage: __init__.py [-h] [--columns COLUMNS] [--filtercol FILTERCOL]
