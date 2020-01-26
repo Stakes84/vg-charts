@@ -1,13 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
-
+import pkg_resources
 
 class VgChartGenerator():
 
   # the init method is the constructor for an instance
   def __init__(self):
-    self.df = pd.read_csv('vg_chart_generator/data/Video_Games_Sales_as_at_22_Dec_2016.csv')
+    self.df = pd.read_csv(pkg_resources.resource_filename('vg_chart_generator', 'Video_Games_Sales_as_at_22_Dec_2016.csv'))
   
   def columns(self):
     return self.df.columns.to_list()
@@ -25,7 +25,9 @@ class VgChartGenerator():
   # Generate the plot and write it out
   def generate_plot(self,aggregate,title,filename):
     plt.suptitle(title)
+    explode = (0.4, 0.3, 0.2) + tuple([0]*(len(aggregate.values) - 3))
     plt.pie(aggregate.values,
+            explode=explode,
             labels=aggregate.keys(),
             autopct='%1.1f%%',
             shadow=True, startangle=90)

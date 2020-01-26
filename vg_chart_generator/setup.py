@@ -13,7 +13,7 @@ config = {
                          'matplotlib',
                          'pandas'],
     'packages': ['vg_chart_generator'],
-    # 'package_data':{ 'vg_chart_generator': ['*.csv']},
+    'package_data':{ 'vg_chart_generator': ['*.csv']},
     'include_package_data': True,
     'name': 'vg_chart_generator',
     'entry_points': {'console_scripts': ['vg-chart-generator=vg_chart_generator:main']}
